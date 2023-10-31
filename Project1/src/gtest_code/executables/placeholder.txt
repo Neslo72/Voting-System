@@ -1,0 +1,2 @@
+Placeholder file so that this folder exists before makefile compiliation
+the makefile needs this directory to exist to work

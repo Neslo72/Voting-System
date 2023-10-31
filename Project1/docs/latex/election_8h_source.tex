@@ -1,0 +1,41 @@
+\hypertarget{election_8h_source}{}\doxysection{election.\+h}
+\label{election_8h_source}\index{/Users/justinlau/Downloads/UMN/Spring2023/5801/Project1/repo-\/Team7/Project1/include/election.h@{/Users/justinlau/Downloads/UMN/Spring2023/5801/Project1/repo-\/Team7/Project1/include/election.h}}
+\mbox{\hyperlink{election_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ ELECTION\_H\_}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ ELECTION\_H\_}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <\mbox{\hyperlink{start_8h}{start.h}}>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <sys/stat.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <ctime>}}
+\DoxyCodeLine{00016\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_election}{Election}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_election_a384f3cbb012bb7c7e5344a6f9226f99f}{Election}}()\ \{\};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_election_a5716fcfc390fe42d3cce8ae8eac51ee5}{\string~Election}}()\ \{\};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_election_a668b912d8128fe9de8a9d14a7d8d372c}{runElection}}()\ \{\};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_election_a62023c4e72afe46214e567b34df7726b}{getNumberOfBallots}}(\textcolor{keywordtype}{string}\ ballotFileName);}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_election_a1bb74d3132d574bf78ddcc56a7627da6}{makeAuditFile}}(\textcolor{keywordtype}{string}\ auditFileName,\ \textcolor{keywordtype}{string}\ ballotFileName);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_election_a0abe8e20a6dbd0195f6d075bd4381801}{writeToAuditFile}}(\textcolor{keywordtype}{string}\ fileName);}
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_election_aee82af8ac6406c7e9f56f89251ddaf08}{ballotName}};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ printResults();}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ totalBallots;}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ path;}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_start}{Start}}\ calculateCall;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_start}{Start}}\ resetSystem;}
+\DoxyCodeLine{00076\ \};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#endif\ \ \ }}
+
+\end{DoxyCode}

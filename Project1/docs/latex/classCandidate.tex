@@ -1,0 +1,141 @@
+\hypertarget{classCandidate}{}\doxysection{Candidate Class Reference}
+\label{classCandidate}\index{Candidate@{Candidate}}
+
+
+\mbox{\hyperlink{classCandidate}{Candidate}} class\+: Stores various fields related to a candidate.  
+
+
+
+
+{\ttfamily \#include $<$candidate.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}\label{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}} 
+\mbox{\hyperlink{classCandidate_aa2747741fb662af5e8f3d01d1d1a43b6}{Candidate}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor\+: Construct a new \mbox{\hyperlink{classCandidate}{Candidate}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCandidate_a58b54411993d174b331aa5c5789eaef0}{Candidate}} (std\+::string \+\_\+name, std\+::string \+\_\+party)
+\begin{DoxyCompactList}\small\item\em Constructor, creates new \mbox{\hyperlink{classCandidate}{Candidate}} objec t. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCandidate_a61ad4ae35e7a3ce5e5b91204b55c0b55}\label{classCandidate_a61ad4ae35e7a3ce5e5b91204b55c0b55}} 
+\mbox{\hyperlink{classCandidate_a61ad4ae35e7a3ce5e5b91204b55c0b55}{$\sim$\+Candidate}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCandidate_af862d92e21d66d74f1d5cae92937d3da}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Getter for name. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCandidate_a459c7d0c4e5708ded61d1ad33182a1e3}{get\+Party}} ()
+\begin{DoxyCompactList}\small\item\em Getter for party. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCandidate_a9555babb846eb95fef6330638e5df8e4}{get\+Num\+Votes}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the candidate\textquotesingle{}s vote total. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCandidate_a52db07cd5d72c13cfd37aa72fd34197b}{add\+Ballot}} (\mbox{\hyperlink{classBallot}{Ballot}} \+\_\+ballot)
+\begin{DoxyCompactList}\small\item\em Add a ballot to the candidate\textquotesingle{}s ballot vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCandidate_a2b51bd708aad899ea535c35074e53e8e}{remove\+Ballot}} (\mbox{\hyperlink{classBallot}{Ballot}} $\ast$removed\+Ballot)
+\begin{DoxyCompactList}\small\item\em Removes a ballot from the candidate\textquotesingle{}s ballot vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCandidate_adc06cce9c7cbf64cfd6afc52d9f37362}\label{classCandidate_adc06cce9c7cbf64cfd6afc52d9f37362}} 
+bool \mbox{\hyperlink{classCandidate_adc06cce9c7cbf64cfd6afc52d9f37362}{eliminated}}
+\begin{DoxyCompactList}\small\item\em bool to determine elimination \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCandidate}{Candidate}} class\+: Stores various fields related to a candidate. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCandidate_a58b54411993d174b331aa5c5789eaef0}\label{classCandidate_a58b54411993d174b331aa5c5789eaef0}} 
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\index{Candidate@{Candidate}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{Candidate()}{Candidate()}}
+{\footnotesize\ttfamily Candidate\+::\+Candidate (\begin{DoxyParamCaption}\item[{std\+::string}]{\+\_\+name,  }\item[{std\+::string}]{\+\_\+party }\end{DoxyParamCaption})}
+
+
+
+Constructor, creates new \mbox{\hyperlink{classCandidate}{Candidate}} objec t. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & name for candidate object \\
+\hline
+{\em \+\_\+party} & party of the candidate object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCandidate_a52db07cd5d72c13cfd37aa72fd34197b}\label{classCandidate_a52db07cd5d72c13cfd37aa72fd34197b}} 
+\index{Candidate@{Candidate}!addBallot@{addBallot}}
+\index{addBallot@{addBallot}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{addBallot()}{addBallot()}}
+{\footnotesize\ttfamily void Candidate\+::add\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallot}{Ballot}}}]{\+\_\+ballot }\end{DoxyParamCaption})}
+
+
+
+Add a ballot to the candidate\textquotesingle{}s ballot vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+ballot} & the ballot to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCandidate_af862d92e21d66d74f1d5cae92937d3da}\label{classCandidate_af862d92e21d66d74f1d5cae92937d3da}} 
+\index{Candidate@{Candidate}!getName@{getName}}
+\index{getName@{getName}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Candidate\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for name. 
+
+\begin{DoxyReturn}{Returns}
+returns candidate\textquotesingle{}s name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a9555babb846eb95fef6330638e5df8e4}\label{classCandidate_a9555babb846eb95fef6330638e5df8e4}} 
+\index{Candidate@{Candidate}!getNumVotes@{getNumVotes}}
+\index{getNumVotes@{getNumVotes}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getNumVotes()}{getNumVotes()}}
+{\footnotesize\ttfamily int Candidate\+::get\+Num\+Votes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the candidate\textquotesingle{}s vote total. 
+
+\begin{DoxyReturn}{Returns}
+returns the size of the ballots vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a459c7d0c4e5708ded61d1ad33182a1e3}\label{classCandidate_a459c7d0c4e5708ded61d1ad33182a1e3}} 
+\index{Candidate@{Candidate}!getParty@{getParty}}
+\index{getParty@{getParty}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{getParty()}{getParty()}}
+{\footnotesize\ttfamily std\+::string Candidate\+::get\+Party (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for party. 
+
+\begin{DoxyReturn}{Returns}
+returns candidate\textquotesingle{}s party 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCandidate_a2b51bd708aad899ea535c35074e53e8e}\label{classCandidate_a2b51bd708aad899ea535c35074e53e8e}} 
+\index{Candidate@{Candidate}!removeBallot@{removeBallot}}
+\index{removeBallot@{removeBallot}!Candidate@{Candidate}}
+\doxysubsubsection{\texorpdfstring{removeBallot()}{removeBallot()}}
+{\footnotesize\ttfamily int Candidate\+::remove\+Ballot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBallot}{Ballot}} $\ast$}]{removed\+Ballot }\end{DoxyParamCaption})}
+
+
+
+Removes a ballot from the candidate\textquotesingle{}s ballot vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em removed\+Ballot} & pointer to where removed ballot will be stored \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+returns 0 on success, 1 on error 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/include/\mbox{\hyperlink{candidate_8h}{candidate.\+h}}\end{DoxyCompactItemize}

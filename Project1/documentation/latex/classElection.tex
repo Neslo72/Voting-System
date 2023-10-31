@@ -1,0 +1,93 @@
+\hypertarget{classElection}{}\doxysection{Election Class Reference}
+\label{classElection}\index{Election@{Election}}
+
+
+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+H\+\_\+.  
+
+
+
+
+{\ttfamily \#include $<$election.\+h$>$}
+
+Inheritance diagram for Election\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classElection}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classElection_a384f3cbb012bb7c7e5344a6f9226f99f}\label{classElection_a384f3cbb012bb7c7e5344a6f9226f99f}} 
+\mbox{\hyperlink{classElection_a384f3cbb012bb7c7e5344a6f9226f99f}{Election}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: Construct a new \mbox{\hyperlink{classElection}{Election}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_afb08c09691a65b2913fe5bf320fbbbca}\label{classElection_afb08c09691a65b2913fe5bf320fbbbca}} 
+\mbox{\hyperlink{classElection_afb08c09691a65b2913fe5bf320fbbbca}{Election}} (fstream \&ballot\+File, string election\+Type)
+\begin{DoxyCompactList}\small\item\em Constructor\+: Construct a new \mbox{\hyperlink{classElection}{Election}} object with election type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_a5716fcfc390fe42d3cce8ae8eac51ee5}\label{classElection_a5716fcfc390fe42d3cce8ae8eac51ee5}} 
+\mbox{\hyperlink{classElection_a5716fcfc390fe42d3cce8ae8eac51ee5}{$\sim$\+Election}} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: Destroy the \mbox{\hyperlink{classElection}{Election}} object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classElection_a44acf79e6667cab6f7a89557f7f16afe}{make\+Audit\+File}} (string election\+Type)
+\begin{DoxyCompactList}\small\item\em Virtual function to be implemented by either the \mbox{\hyperlink{classCPL}{C\+PL}} or \mbox{\hyperlink{classIR}{IR}} classes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classElection_acb27b951ddc61931f2e87af8c718aab2}{write\+To\+Audit\+File}} (string text, string audit\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Writes to the audit file. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classElection_a39fac147589e508c303733c4faf49e87}\label{classElection_a39fac147589e508c303733c4faf49e87}} 
+void \mbox{\hyperlink{classElection_a39fac147589e508c303733c4faf49e87}{print\+Results}} (string text)
+\begin{DoxyCompactList}\small\item\em prints the results of the election \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classElection_aee82af8ac6406c7e9f56f89251ddaf08}\label{classElection_aee82af8ac6406c7e9f56f89251ddaf08}} 
+string \mbox{\hyperlink{classElection_aee82af8ac6406c7e9f56f89251ddaf08}{ballot\+Name}}
+\begin{DoxyCompactList}\small\item\em name of the provided ballot file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+E\+L\+E\+C\+T\+I\+O\+N\+\_\+\+H\+\_\+. 
+
+Sets-\/up basic election processing before running election algorithms ~\newline
+Determines the number of ballots, creates the audit file, writes to the audit file, and prints the results of the election 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classElection_a44acf79e6667cab6f7a89557f7f16afe}\label{classElection_a44acf79e6667cab6f7a89557f7f16afe}} 
+\index{Election@{Election}!makeAuditFile@{makeAuditFile}}
+\index{makeAuditFile@{makeAuditFile}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{makeAuditFile()}{makeAuditFile()}}
+{\footnotesize\ttfamily string Election\+::make\+Audit\+File (\begin{DoxyParamCaption}\item[{string}]{election\+Type }\end{DoxyParamCaption})}
+
+
+
+Virtual function to be implemented by either the \mbox{\hyperlink{classCPL}{C\+PL}} or \mbox{\hyperlink{classIR}{IR}} classes. 
+
+Creates the audit file
+
+
+\begin{DoxyParams}{Parameters}
+{\em audit\+File\+Name} & name of the audit file \\
+\hline
+{\em ballot\+File\+Name} & name of the provided ballot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\+: path to the audit file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classElection_acb27b951ddc61931f2e87af8c718aab2}\label{classElection_acb27b951ddc61931f2e87af8c718aab2}} 
+\index{Election@{Election}!writeToAuditFile@{writeToAuditFile}}
+\index{writeToAuditFile@{writeToAuditFile}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{writeToAuditFile()}{writeToAuditFile()}}
+{\footnotesize\ttfamily void Election\+::write\+To\+Audit\+File (\begin{DoxyParamCaption}\item[{string}]{text,  }\item[{string}]{audit\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Writes to the audit file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text to write to the file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/src/include/\mbox{\hyperlink{election_8h}{election.\+h}}\end{DoxyCompactItemize}

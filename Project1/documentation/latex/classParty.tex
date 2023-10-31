@@ -1,0 +1,169 @@
+\hypertarget{classParty}{}\doxysection{Party Class Reference}
+\label{classParty}\index{Party@{Party}}
+
+
+\mbox{\hyperlink{classParty}{Party}} class, used to store relevant information for party objects.  
+
+
+
+
+{\ttfamily \#include $<$party.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParty_a31d77f763e1dc9549532653a4a0dfde5}\label{classParty_a31d77f763e1dc9549532653a4a0dfde5}} 
+\mbox{\hyperlink{classParty_a31d77f763e1dc9549532653a4a0dfde5}{Party}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_a85aa837e38a06690e6fee5087d7c7ad7}\label{classParty_a85aa837e38a06690e6fee5087d7c7ad7}} 
+\mbox{\hyperlink{classParty_a85aa837e38a06690e6fee5087d7c7ad7}{$\sim$\+Party}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a1d26b143d5603ec0eaf4b83fe5c87ddc}{add\+Ballots}} (int x)
+\begin{DoxyCompactList}\small\item\em Add an input number of ballots to the party\textquotesingle{}s ballot total. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_a1534ebb8cdd7a2c2db651c4b06686bfc}\label{classParty_a1534ebb8cdd7a2c2db651c4b06686bfc}} 
+void \mbox{\hyperlink{classParty_a1534ebb8cdd7a2c2db651c4b06686bfc}{inc\+Ballot\+Total}} ()
+\begin{DoxyCompactList}\small\item\em Increment ballot total by 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_a13863330d56467331f686e68ef7f6d28}{get\+Ballot\+Total}} ()
+\begin{DoxyCompactList}\small\item\em Getter for ballot Total. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParty_ae95170830a9a5ec225e99a89880d62cc}\label{classParty_ae95170830a9a5ec225e99a89880d62cc}} 
+int \mbox{\hyperlink{classParty_ae95170830a9a5ec225e99a89880d62cc}{win\+Seats}} (int x)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\+Win seat,\char`\"{} adds to win\+Seats depending on remaining party candidates \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_ae88b223df008f56ea704bdd54efa9bd2}{get\+Seats\+Won}} ()
+\begin{DoxyCompactList}\small\item\em Getter for seats\+Won. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classParty_a8de99c8cff2bbb656b94fa9d300ea080}{get\+Num\+Members}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the number of members in the \mbox{\hyperlink{classParty}{Party}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classParty_a4c079c8314ddb271f142f7e44c366997}{get\+Members}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the party\textquotesingle{}s members string vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_a37cdf95920c98cd1cd36f7978eda05fe}{add\+Member}} (\mbox{\hyperlink{classCandidate}{Candidate}} \+\_\+member)
+\begin{DoxyCompactList}\small\item\em Add a member to the members string vector. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classParty_aec002b29fba696fb2b9e71e52b61bbbb}{get\+Winners}} ()
+\begin{DoxyCompactList}\small\item\em Get the winners from this party, based on num\+Seats and members vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classParty_ae7fdddd4dc0a7c0fdb44f3d71e36be4d}{decrement\+Ballots}} (int x)
+\begin{DoxyCompactList}\small\item\em take away ballots from party \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParty_a71dd104a8367e482095bc3780161770a}\label{classParty_a71dd104a8367e482095bc3780161770a}} 
+std\+::string {\bfseries party\+Name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classParty}{Party}} class, used to store relevant information for party objects. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParty_a1d26b143d5603ec0eaf4b83fe5c87ddc}\label{classParty_a1d26b143d5603ec0eaf4b83fe5c87ddc}} 
+\index{Party@{Party}!addBallots@{addBallots}}
+\index{addBallots@{addBallots}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{addBallots()}{addBallots()}}
+{\footnotesize\ttfamily void Party\+::add\+Ballots (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Add an input number of ballots to the party\textquotesingle{}s ballot total. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Number to add to ballot total \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a37cdf95920c98cd1cd36f7978eda05fe}\label{classParty_a37cdf95920c98cd1cd36f7978eda05fe}} 
+\index{Party@{Party}!addMember@{addMember}}
+\index{addMember@{addMember}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{addMember()}{addMember()}}
+{\footnotesize\ttfamily void Party\+::add\+Member (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidate}{Candidate}}}]{\+\_\+member }\end{DoxyParamCaption})}
+
+
+
+Add a member to the members string vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+member} & member to add to the members vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_ae7fdddd4dc0a7c0fdb44f3d71e36be4d}\label{classParty_ae7fdddd4dc0a7c0fdb44f3d71e36be4d}} 
+\index{Party@{Party}!decrementBallots@{decrementBallots}}
+\index{decrementBallots@{decrementBallots}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{decrementBallots()}{decrementBallots()}}
+{\footnotesize\ttfamily void Party\+::decrement\+Ballots (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+take away ballots from party 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & num ballots taken away \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classParty_a13863330d56467331f686e68ef7f6d28}\label{classParty_a13863330d56467331f686e68ef7f6d28}} 
+\index{Party@{Party}!getBallotTotal@{getBallotTotal}}
+\index{getBallotTotal@{getBallotTotal}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getBallotTotal()}{getBallotTotal()}}
+{\footnotesize\ttfamily int Party\+::get\+Ballot\+Total (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for ballot Total. 
+
+\begin{DoxyReturn}{Returns}
+ballot total 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a4c079c8314ddb271f142f7e44c366997}\label{classParty_a4c079c8314ddb271f142f7e44c366997}} 
+\index{Party@{Party}!getMembers@{getMembers}}
+\index{getMembers@{getMembers}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getMembers()}{getMembers()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$>$ Party\+::get\+Members (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the party\textquotesingle{}s members string vector. 
+
+\begin{DoxyReturn}{Returns}
+Members string vector 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_a8de99c8cff2bbb656b94fa9d300ea080}\label{classParty_a8de99c8cff2bbb656b94fa9d300ea080}} 
+\index{Party@{Party}!getNumMembers@{getNumMembers}}
+\index{getNumMembers@{getNumMembers}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getNumMembers()}{getNumMembers()}}
+{\footnotesize\ttfamily int Party\+::get\+Num\+Members (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the number of members in the \mbox{\hyperlink{classParty}{Party}}. 
+
+\begin{DoxyReturn}{Returns}
+number of Members 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_ae88b223df008f56ea704bdd54efa9bd2}\label{classParty_ae88b223df008f56ea704bdd54efa9bd2}} 
+\index{Party@{Party}!getSeatsWon@{getSeatsWon}}
+\index{getSeatsWon@{getSeatsWon}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getSeatsWon()}{getSeatsWon()}}
+{\footnotesize\ttfamily int Party\+::get\+Seats\+Won (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for seats\+Won. 
+
+\begin{DoxyReturn}{Returns}
+seats\+Won 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classParty_aec002b29fba696fb2b9e71e52b61bbbb}\label{classParty_aec002b29fba696fb2b9e71e52b61bbbb}} 
+\index{Party@{Party}!getWinners@{getWinners}}
+\index{getWinners@{getWinners}!Party@{Party}}
+\doxysubsubsection{\texorpdfstring{getWinners()}{getWinners()}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Party\+::get\+Winners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the winners from this party, based on num\+Seats and members vector. 
+
+\begin{DoxyReturn}{Returns}
+String vector of winning candidate from this party 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/src/include/\mbox{\hyperlink{party_8h}{party.\+h}}\end{DoxyCompactItemize}

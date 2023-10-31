@@ -1,0 +1,24 @@
+Running the election
+
+INITIAL VOTE TALLIES:
+ Rosen  (2 votes)
+  Kleinberg  (0 votes)
+  Chou  (1 votes)
+  Royce  (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Kleinberg  has been eliminated!
+The remaining candidates after redistribution are: 
+ Rosen  (2 votes)
+  Chou  (1 votes)
+  Royce  (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Chou  has been eliminated!
+The remaining candidates after redistribution are: 
+ Rosen  (3 votes)
+  Royce  (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Royce  has been eliminated!
+The remaining candidates after redistribution are: 
+ Rosen  (5 votes)
+Candidate Rosen  has won the election!
+

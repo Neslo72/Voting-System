@@ -1,0 +1,253 @@
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from BallotTest
+[ RUN      ] BallotTest.addChoice
+[       OK ] BallotTest.addChoice (0 ms)
+[ RUN      ] BallotTest.EmptyChoices
+[       OK ] BallotTest.EmptyChoices (0 ms)
+[ RUN      ] BallotTest.addChoiceOrder
+[       OK ] BallotTest.addChoiceOrder (0 ms)
+[----------] 3 tests from BallotTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (2 ms total)
+[  PASSED  ] 3 tests.
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from CandidateTest
+[ RUN      ] CandidateTest.CandidateConstructor
+[       OK ] CandidateTest.CandidateConstructor (0 ms)
+[ RUN      ] CandidateTest.getNumVotes
+[       OK ] CandidateTest.getNumVotes (0 ms)
+[ RUN      ] CandidateTest.removeBallot
+[       OK ] CandidateTest.removeBallot (0 ms)
+[ RUN      ] CandidateTest.LoadTest
+[       OK ] CandidateTest.LoadTest (492 ms)
+[----------] 4 tests from CandidateTest (493 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (495 ms total)
+[  PASSED  ] 4 tests.
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from CPLSysTest
+[ RUN      ] CPLSysTest.NormalCPLSystemTest
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Foster
+Winner: Green
+Winner: McClure
+
+[       OK ] CPLSysTest.NormalCPLSystemTest (44 ms)
+[ RUN      ] CPLSysTest.TieNoRemainderCPLSystemTest
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Foster
+Winner: Green
+Winner: Jacks
+
+[       OK ] CPLSysTest.TieNoRemainderCPLSystemTest (73 ms)
+[ RUN      ] CPLSysTest.WipeoutCPLSystemTest
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Foster
+Winner:  Volz
+Winner:  Pike
+
+[       OK ] CPLSysTest.WipeoutCPLSystemTest (58 ms)
+[ RUN      ] CPLSysTest.PureTieCPLSystemTest
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Green
+Winner: McClure
+
+[       OK ] CPLSysTest.PureTieCPLSystemTest (65 ms)
+[----------] 4 tests from CPLSysTest (240 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (245 ms total)
+[  PASSED  ] 4 tests.
+[==========] Running 10 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 10 tests from CPLTest
+[ RUN      ] CPLTest.CPLRunElectionTest
+[       OK ] CPLTest.CPLRunElectionTest (18 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestType
+
+[       OK ] CPLTest.CPLReadBallotsTestType (2 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestNumParty
+
+[       OK ] CPLTest.CPLReadBallotsTestNumParty (1 ms)
+[ RUN      ] CPLTest.CPLReadBallotsPartyNames
+
+[       OK ] CPLTest.CPLReadBallotsPartyNames (0 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestCandidates
+
+[       OK ] CPLTest.CPLReadBallotsTestCandidates (1 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestNumSeats
+
+[       OK ] CPLTest.CPLReadBallotsTestNumSeats (0 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestNumBallots
+
+[       OK ] CPLTest.CPLReadBallotsTestNumBallots (1 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestBallotTotals
+
+[       OK ] CPLTest.CPLReadBallotsTestBallotTotals (0 ms)
+[ RUN      ] CPLTest.CPLBreakTieTest
+[       OK ] CPLTest.CPLBreakTieTest (1227 ms)
+[ RUN      ] CPLTest.CPLAssignSeatsTest
+gtest_code/CPLTest.cc:183: Failure
+Expected equality of these values:
+  1
+  cpl.parties[3].getSeatsWon()
+    Which is: 0
+[  FAILED  ] CPLTest.CPLAssignSeatsTest (15 ms)
+[----------] 10 tests from CPLTest (1265 ms total)
+
+[----------] Global test environment tear-down
+[==========] 10 tests from 1 test suite ran. (1265 ms total)
+[  PASSED  ] 9 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] CPLTest.CPLAssignSeatsTest
+
+ 1 FAILED TEST
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from IRSysTest
+[ RUN      ] IRSysTest.IRNormalSystemTest
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Kleinberg  has been eliminated.
+The remaining candidates are: 
+ Rosen  (3 votes)
+  Chou  (1 votes)
+  Royce  (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Chou  has been eliminated.
+The remaining candidates are: 
+ Rosen  (4 votes)
+  Royce  (3 votes)
+Candidate Rosen  has won the election!
+
+[       OK ] IRSysTest.IRNormalSystemTest (92 ms)
+[ RUN      ] IRSysTest.IRWipeoutSystemTest
+Running the election.
+Candidate Rosen  has won the election!
+
+[       OK ] IRSysTest.IRWipeoutSystemTest (8 ms)
+[ RUN      ] IRSysTest.IRTieTestSystemTest
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Royce  has been eliminated.
+The remaining candidates are: 
+ Rosen  (3 votes)
+  Kleinberg  (3 votes)
+  Chou  (2 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Chou  has been eliminated.
+The remaining candidates are: 
+ Rosen  (4 votes)
+  Kleinberg  (3 votes)
+Candidate Rosen  has won the election!
+
+[       OK ] IRSysTest.IRTieTestSystemTest (78 ms)
+[ RUN      ] IRSysTest.IRMultipleElimTest
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Lucas has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Jon (1 votes)
+  Jo (1 votes)
+  Marcus (1 votes)
+  Liam (1 votes)
+  Justin (2 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Liam has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Jon (1 votes)
+  Jo (1 votes)
+  Marcus (1 votes)
+  Justin (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Jo has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Jon (1 votes)
+  Marcus (2 votes)
+  Justin (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Jon has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Marcus (3 votes)
+  Justin (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate Jack has been eliminated.
+The remaining candidates are: 
+  Marcus (4 votes)
+  Justin (3 votes)
+Candidate  Marcus has won the election!
+
+[       OK ] IRSysTest.IRMultipleElimTest (351 ms)
+[----------] 4 tests from IRSysTest (530 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (530 ms total)
+[  PASSED  ] 4 tests.
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from IRTest
+[ RUN      ] IRTest.IRRunElectionNoCan
+Running the election.
+
+[       OK ] IRTest.IRRunElectionNoCan (16 ms)
+[ RUN      ] IRTest.IRRunElectionOneCanOneBalEmpty
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate Arnold has been eliminated.
+The remaining candidates are: 
+Error: possible elimination candidate has no items.
+
+[       OK ] IRTest.IRRunElectionOneCanOneBalEmpty (42 ms)
+[ RUN      ] IRTest.IRRunElectionOneCanOneBal
+Running the election.
+Candidate Arnold has won the election!
+
+[       OK ] IRTest.IRRunElectionOneCanOneBal (17 ms)
+[ RUN      ] IRTest.IRRunElectionTwoCanTwoBal
+Running the election.
+Candidate Arnold has won the election!
+
+[       OK ] IRTest.IRRunElectionTwoCanTwoBal (24 ms)
+[ RUN      ] IRTest.IRRunElectionThreeCanThreeBal
+Running the election.
+Candidate Gerald has won the election!
+
+[       OK ] IRTest.IRRunElectionThreeCanThreeBal (17 ms)
+[----------] 5 tests from IRTest (116 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (117 ms total)
+[  PASSED  ] 5 tests.
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from PartyTest
+[ RUN      ] PartyTest.BallotTotalManipulation
+[       OK ] PartyTest.BallotTotalManipulation (1 ms)
+[ RUN      ] PartyTest.SeatManipulation
+[       OK ] PartyTest.SeatManipulation (0 ms)
+[ RUN      ] PartyTest.MemberManipulation
+[       OK ] PartyTest.MemberManipulation (0 ms)
+[ RUN      ] PartyTest.getWinners
+[       OK ] PartyTest.getWinners (0 ms)
+[----------] 4 tests from PartyTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (1 ms total)
+[  PASSED  ] 4 tests.

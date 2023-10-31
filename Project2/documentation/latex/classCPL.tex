@@ -1,0 +1,121 @@
+\hypertarget{classCPL}{}\doxysection{C\+PL Class Reference}
+\label{classCPL}\index{CPL@{CPL}}
+
+
+\mbox{\hyperlink{classCPL}{C\+PL}} class, inherits \mbox{\hyperlink{classElection}{Election}}, run closed party list election type functionality.  
+
+
+
+
+{\ttfamily \#include $<$closedpartylist.\+h$>$}
+
+Inheritance diagram for C\+PL\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCPL}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPL_a9938ffc19a8f041161df5e6392eb1d4c}\label{classCPL_a9938ffc19a8f041161df5e6392eb1d4c}} 
+\mbox{\hyperlink{classCPL_a9938ffc19a8f041161df5e6392eb1d4c}{C\+PL}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_abbbcdafee9b1a5951730494fd3595439}\label{classCPL_abbbcdafee9b1a5951730494fd3595439}} 
+\mbox{\hyperlink{classCPL_abbbcdafee9b1a5951730494fd3595439}{$\sim$\+C\+PL}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a70cb020869a177702b0bc7efef57a8d5}\label{classCPL_a70cb020869a177702b0bc7efef57a8d5}} 
+int \mbox{\hyperlink{classCPL_a70cb020869a177702b0bc7efef57a8d5}{run\+Election}} (string audit\+File\+Name)
+\begin{DoxyCompactList}\small\item\em run\+Election\+: Runs election \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classParty}{Party}} $\ast$ \mbox{\hyperlink{classCPL_a3dbf758a677c27d524355cf89ba1a8bf}{break\+Tie}} (std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$ tie\+Vector)
+\begin{DoxyCompactList}\small\item\em breaks a tie between parties \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a297acbd82a6f4599da30f950c621c4dc}\label{classCPL_a297acbd82a6f4599da30f950c621c4dc}} 
+int \mbox{\hyperlink{classCPL_a297acbd82a6f4599da30f950c621c4dc}{read\+Ballots}} (std\+::string ballot\+File\+Name, std\+::string audit\+File\+Name)
+\begin{DoxyCompactList}\small\item\em read\+Ballots\+: reads ballots \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_af83d9fd06b52451219c1b2d6fa985468}\label{classCPL_af83d9fd06b52451219c1b2d6fa985468}} 
+void \mbox{\hyperlink{classCPL_af83d9fd06b52451219c1b2d6fa985468}{assign\+Seats}} ()
+\begin{DoxyCompactList}\small\item\em assign\+Seats\+: Assign seats to Parties \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCPL_ab05c22a6b73cc5a856609ee5a71113db}{get\+Highest\+Remainder\+Index}} ()
+\begin{DoxyCompactList}\small\item\em get\+Highest\+Remainder\+Index\+: Gets the index of the party with the highest remainder \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classCPL_a9d37528da9f4c088fc565e91b346ef9e}{get\+Winners}} ()
+\begin{DoxyCompactList}\small\item\em gets the winners \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_ace40f96aff8a90a1bfb271d873de0aa0}\label{classCPL_ace40f96aff8a90a1bfb271d873de0aa0}} 
+string {\bfseries get\+Election\+Type\+CP} () const
+\item 
+\mbox{\Hypertarget{classCPL_a6b9772eb447e9f01ba25c2738b240698}\label{classCPL_a6b9772eb447e9f01ba25c2738b240698}} 
+int {\bfseries get\+Num\+Parties} () const
+\item 
+\mbox{\Hypertarget{classCPL_a0899eaedc6bda8e7fb0690eeb3f56224}\label{classCPL_a0899eaedc6bda8e7fb0690eeb3f56224}} 
+string {\bfseries get\+Num\+Seats} () const
+\item 
+\mbox{\Hypertarget{classCPL_a62aba78d3bea4df33660f0745b68d7e5}\label{classCPL_a62aba78d3bea4df33660f0745b68d7e5}} 
+int {\bfseries get\+Num\+Ballots} () const
+\item 
+\mbox{\Hypertarget{classCPL_a0823183f8b554bd343cb36130d88caa3}\label{classCPL_a0823183f8b554bd343cb36130d88caa3}} 
+vector$<$ string $>$ {\bfseries get\+Names} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPL_af9b520848b37eab04e633cda5fe073be}\label{classCPL_af9b520848b37eab04e633cda5fe073be}} 
+std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ {\bfseries parties}
+\item 
+\mbox{\Hypertarget{classCPL_ab5d771dc4463477544a887024009b7d6}\label{classCPL_ab5d771dc4463477544a887024009b7d6}} 
+int {\bfseries num\+\_\+seats}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCPL}{C\+PL}} class, inherits \mbox{\hyperlink{classElection}{Election}}, run closed party list election type functionality. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPL_a3dbf758a677c27d524355cf89ba1a8bf}\label{classCPL_a3dbf758a677c27d524355cf89ba1a8bf}} 
+\index{CPL@{CPL}!breakTie@{breakTie}}
+\index{breakTie@{breakTie}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{breakTie()}{breakTie()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classParty}{Party}}$\ast$ C\+P\+L\+::break\+Tie (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$}]{tie\+Vector }\end{DoxyParamCaption})}
+
+
+
+breaks a tie between parties 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tie\+Vector} & Parties of which are tied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+selected party of tie 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_ab05c22a6b73cc5a856609ee5a71113db}\label{classCPL_ab05c22a6b73cc5a856609ee5a71113db}} 
+\index{CPL@{CPL}!getHighestRemainderIndex@{getHighestRemainderIndex}}
+\index{getHighestRemainderIndex@{getHighestRemainderIndex}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{getHighestRemainderIndex()}{getHighestRemainderIndex()}}
+{\footnotesize\ttfamily int C\+P\+L\+::get\+Highest\+Remainder\+Index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Highest\+Remainder\+Index\+: Gets the index of the party with the highest remainder 
+
+\begin{DoxyReturn}{Returns}
+returns index of party with highest remainder 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCPL_a9d37528da9f4c088fc565e91b346ef9e}\label{classCPL_a9d37528da9f4c088fc565e91b346ef9e}} 
+\index{CPL@{CPL}!getWinners@{getWinners}}
+\index{getWinners@{getWinners}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{getWinners()}{getWinners()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$>$ C\+P\+L\+::get\+Winners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets the winners 
+
+\begin{DoxyReturn}{Returns}
+winners 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/src/include/\mbox{\hyperlink{closedpartylist_8h}{closedpartylist.\+h}}\end{DoxyCompactItemize}

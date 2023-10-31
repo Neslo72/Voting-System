@@ -1,0 +1,101 @@
+\hypertarget{class_election}{}\doxysection{Election Class Reference}
+\label{class_election}\index{Election@{Election}}
+
+
+Sets-\/up basic election processing before running election algorithms ~\newline
+Determines the number of ballots, creates the audit file, writes to the audit file, and prints the results of the election.  
+
+
+
+
+{\ttfamily \#include $<$election.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_election_a384f3cbb012bb7c7e5344a6f9226f99f}\label{class_election_a384f3cbb012bb7c7e5344a6f9226f99f} 
+{\bfseries Election} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: Construct a new \doxylink{class_election}{Election} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_election_a5716fcfc390fe42d3cce8ae8eac51ee5}\label{class_election_a5716fcfc390fe42d3cce8ae8eac51ee5} 
+{\bfseries $\sim$\+Election} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: Destroy the \doxylink{class_election}{Election} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_election_a668b912d8128fe9de8a9d14a7d8d372c}\label{class_election_a668b912d8128fe9de8a9d14a7d8d372c} 
+virtual void {\bfseries run\+Election} ()
+\begin{DoxyCompactList}\small\item\em Virtual function to be implemented by either the \doxylink{class_c_p_l}{CPL} or \doxylink{class_i_r}{IR} classes. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_election_a62023c4e72afe46214e567b34df7726b}{get\+Number\+Of\+Ballots}} (string ballot\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Counts the number of ballots in a provided ballot file. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_election_a1bb74d3132d574bf78ddcc56a7627da6}{make\+Audit\+File}} (string audit\+File\+Name, string ballot\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Creates the audit file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_election_a0abe8e20a6dbd0195f6d075bd4381801}{write\+To\+Audit\+File}} (string file\+Name)
+\begin{DoxyCompactList}\small\item\em Writes to the audit file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_election_aee82af8ac6406c7e9f56f89251ddaf08}\label{class_election_aee82af8ac6406c7e9f56f89251ddaf08} 
+string {\bfseries ballot\+Name}
+\begin{DoxyCompactList}\small\item\em name of the provided ballot file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sets-\/up basic election processing before running election algorithms ~\newline
+Determines the number of ballots, creates the audit file, writes to the audit file, and prints the results of the election. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_election_a62023c4e72afe46214e567b34df7726b}\label{class_election_a62023c4e72afe46214e567b34df7726b} 
+\index{Election@{Election}!getNumberOfBallots@{getNumberOfBallots}}
+\index{getNumberOfBallots@{getNumberOfBallots}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{getNumberOfBallots()}{getNumberOfBallots()}}
+{\footnotesize\ttfamily int Election\+::get\+Number\+Of\+Ballots (\begin{DoxyParamCaption}\item[{string}]{ballot\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Counts the number of ballots in a provided ballot file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+File\+Name} & name of the provided ballot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\+: number of ballots 
+\end{DoxyReturn}
+\Hypertarget{class_election_a1bb74d3132d574bf78ddcc56a7627da6}\label{class_election_a1bb74d3132d574bf78ddcc56a7627da6} 
+\index{Election@{Election}!makeAuditFile@{makeAuditFile}}
+\index{makeAuditFile@{makeAuditFile}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{makeAuditFile()}{makeAuditFile()}}
+{\footnotesize\ttfamily string Election\+::make\+Audit\+File (\begin{DoxyParamCaption}\item[{string}]{audit\+File\+Name,  }\item[{string}]{ballot\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+Creates the audit file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em audit\+File\+Name} & name of the audit file \\
+\hline
+{\em ballot\+File\+Name} & name of the provided ballot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\+: path to the audit file 
+\end{DoxyReturn}
+\Hypertarget{class_election_a0abe8e20a6dbd0195f6d075bd4381801}\label{class_election_a0abe8e20a6dbd0195f6d075bd4381801} 
+\index{Election@{Election}!writeToAuditFile@{writeToAuditFile}}
+\index{writeToAuditFile@{writeToAuditFile}!Election@{Election}}
+\doxysubsubsection{\texorpdfstring{writeToAuditFile()}{writeToAuditFile()}}
+{\footnotesize\ttfamily void Election\+::write\+To\+Audit\+File (\begin{DoxyParamCaption}\item[{string}]{file\+Name }\end{DoxyParamCaption})}
+
+
+
+Writes to the audit file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & name of the audit file \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/justinlau/\+Downloads/\+UMN/\+Spring2023/5801/\+Project1/repo-\/\+Team7/\+Project1/include/\mbox{\hyperlink{election_8h}{election.\+h}}\end{DoxyCompactItemize}

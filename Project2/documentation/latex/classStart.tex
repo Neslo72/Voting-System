@@ -1,0 +1,79 @@
+\hypertarget{classStart}{}\doxysection{Start Class Reference}
+\label{classStart}\index{Start@{Start}}
+
+
+\mbox{\hyperlink{classStart}{Start}} Class\+: Begins the election system \& processes the ballot file.  
+
+
+
+
+{\ttfamily \#include $<$start.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStart_a26acc6dcc887a9c9d140532a179cfe34}\label{classStart_a26acc6dcc887a9c9d140532a179cfe34}} 
+\mbox{\hyperlink{classStart_a26acc6dcc887a9c9d140532a179cfe34}{Start}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: Construct a new \mbox{\hyperlink{classStart}{Start}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStart_ad28971ef6d65a39a8a748d4992260f8c}\label{classStart_ad28971ef6d65a39a8a748d4992260f8c}} 
+\mbox{\hyperlink{classStart_ad28971ef6d65a39a8a748d4992260f8c}{$\sim$\+Start}} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: Destroy the \mbox{\hyperlink{classStart}{Start}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStart_a53d58434e2dacfd851d221ee817acf77}\label{classStart_a53d58434e2dacfd851d221ee817acf77}} 
+void \mbox{\hyperlink{classStart_a53d58434e2dacfd851d221ee817acf77}{reset}} ()
+\begin{DoxyCompactList}\small\item\em reset function to handle an interruption while the system is running \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classStart_a32c4040ea292020cb4b4d08c13eb750f}\label{classStart_a32c4040ea292020cb4b4d08c13eb750f}} 
+void \mbox{\hyperlink{classStart_a32c4040ea292020cb4b4d08c13eb750f}{enter\+Ballot\+File}} ()
+\begin{DoxyCompactList}\small\item\em prompts the user for a valid ballot file \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classStart_a207b31b9dfb528a25aea3e2222e1c8b2}{calculate}} (string ballot\+File\+Name)
+\begin{DoxyCompactList}\small\item\em calculates the type of election based on the first line of the ballot file \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStart_a3beff3944e02af1cdb559baab3903660}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function to begin the voting system which handles the ballot file \& determines the election type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classStart}{Start}} Class\+: Begins the election system \& processes the ballot file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStart_a207b31b9dfb528a25aea3e2222e1c8b2}\label{classStart_a207b31b9dfb528a25aea3e2222e1c8b2}} 
+\index{Start@{Start}!calculate@{calculate}}
+\index{calculate@{calculate}!Start@{Start}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily string Start\+::calculate (\begin{DoxyParamCaption}\item[{string}]{ballot\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+calculates the type of election based on the first line of the ballot file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+File\+Name} & the name of the ballot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\+: the type of election (\textquotesingle{}\mbox{\hyperlink{classCPL}{C\+PL}}\textquotesingle{} or \textquotesingle{}\mbox{\hyperlink{classIR}{IR}}\textquotesingle{}) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStart_a3beff3944e02af1cdb559baab3903660}\label{classStart_a3beff3944e02af1cdb559baab3903660}} 
+\index{Start@{Start}!main@{main}}
+\index{main@{main}!Start@{Start}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int Start\+::main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main function to begin the voting system which handles the ballot file \& determines the election type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of command line arguments \\
+\hline
+{\em argv} & array of command line arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\+: 0 on success and 1 on failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/src/include/\mbox{\hyperlink{start_8h}{start.\+h}}\end{DoxyCompactItemize}

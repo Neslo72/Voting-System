@@ -1,0 +1,165 @@
+\hypertarget{classIR}{}\doxysection{IR Class Reference}
+\label{classIR}\index{IR@{IR}}
+
+
+\mbox{\hyperlink{classIR}{IR}} election class, inherits election, provides instant runoff voting election capabilities.  
+
+
+
+
+{\ttfamily \#include $<$ir.\+h$>$}
+
+Inheritance diagram for IR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classIR}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIR_aa4098d98350ff7f6fa1d58ef97283946}\label{classIR_aa4098d98350ff7f6fa1d58ef97283946}} 
+\mbox{\hyperlink{classIR_aa4098d98350ff7f6fa1d58ef97283946}{IR}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor\+: Construct a new \mbox{\hyperlink{classIR}{IR}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIR_acc2e758f018c7b069315a826e9ca3043}\label{classIR_acc2e758f018c7b069315a826e9ca3043}} 
+\mbox{\hyperlink{classIR_acc2e758f018c7b069315a826e9ca3043}{$\sim$\+IR}} ()
+\begin{DoxyCompactList}\small\item\em Default Destructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIR_a97ae0941b904a3a6b2e39b663683d0e0}{run\+Election}} (std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&cans\+From\+Ballots, string audit\+File\+Name)
+\begin{DoxyCompactList}\small\item\em run\+Election\+: Runs the election \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ \mbox{\hyperlink{classIR_ac9bf04b7c8c6c04140f091316da74598}{break\+Tie}} (std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ tie\+Vector)
+\begin{DoxyCompactList}\small\item\em break\+Tie\+: Breaks a tie of multiple candidates \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \mbox{\hyperlink{classIR_a7a8349575ed4706f631d8024627f3797}{read\+Ballots}} (string ballot\+File\+Name, string audit\+File\+Name)
+\begin{DoxyCompactList}\small\item\em read\+Ballots\+: Reads all ballots \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIR_a3088f2585d7bca99ffbc3e65d49a08ce}{get\+Candidate\+Index}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Gets index of a given candidate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIR_a3d6fe8a0db806c767a4115390a0f7dc5}{redistribute\+Votes}} (\mbox{\hyperlink{classCandidate}{Candidate}} $\ast$candidate)
+\begin{DoxyCompactList}\small\item\em redistribute\+Votes\+: Redistributes votes in an \mbox{\hyperlink{classIR}{IR}} election \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCandidate}{Candidate}} \mbox{\hyperlink{classIR_a6339209cc8bcb6accaa45def18c987df}{get\+Winner}} ()
+\begin{DoxyCompactList}\small\item\em returns the winner \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classIR_a13773ce5d2e823a32f3e45162c7d87ab}{set\+Winner}} (\mbox{\hyperlink{classCandidate}{Candidate}} $\ast$candidate)
+\begin{DoxyCompactList}\small\item\em sets the winner \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIR_a92412756b906a899c744e983d1035740}\label{classIR_a92412756b906a899c744e983d1035740}} 
+string {\bfseries printing} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classIR}{IR}} election class, inherits election, provides instant runoff voting election capabilities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIR_ac9bf04b7c8c6c04140f091316da74598}\label{classIR_ac9bf04b7c8c6c04140f091316da74598}} 
+\index{IR@{IR}!breakTie@{breakTie}}
+\index{breakTie@{breakTie}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{breakTie()}{breakTie()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCandidate}{Candidate}}$\ast$ I\+R\+::break\+Tie (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$}]{tie\+Vector }\end{DoxyParamCaption})}
+
+
+
+break\+Tie\+: Breaks a tie of multiple candidates 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tie\+Vector} & vector of candidates in a tie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+selected candidate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIR_a3088f2585d7bca99ffbc3e65d49a08ce}\label{classIR_a3088f2585d7bca99ffbc3e65d49a08ce}} 
+\index{IR@{IR}!getCandidateIndex@{getCandidateIndex}}
+\index{getCandidateIndex@{getCandidateIndex}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{getCandidateIndex()}{getCandidateIndex()}}
+{\footnotesize\ttfamily int I\+R\+::get\+Candidate\+Index (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Gets index of a given candidate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of candidate to get index of \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIR_a6339209cc8bcb6accaa45def18c987df}\label{classIR_a6339209cc8bcb6accaa45def18c987df}} 
+\index{IR@{IR}!getWinner@{getWinner}}
+\index{getWinner@{getWinner}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{getWinner()}{getWinner()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCandidate}{Candidate}} I\+R\+::get\+Winner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+returns the winner 
+
+\begin{DoxyReturn}{Returns}
+winner 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIR_a7a8349575ed4706f631d8024627f3797}\label{classIR_a7a8349575ed4706f631d8024627f3797}} 
+\index{IR@{IR}!readBallots@{readBallots}}
+\index{readBallots@{readBallots}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{readBallots()}{readBallots()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}} $\ast$$>$ I\+R\+::read\+Ballots (\begin{DoxyParamCaption}\item[{string}]{ballot\+File\+Name,  }\item[{string}]{audit\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+read\+Ballots\+: Reads all ballots 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+File\+Name} & name of ballot\+File to read \\
+\hline
+{\em a\+File\+Name} & name of the audit file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIR_a3d6fe8a0db806c767a4115390a0f7dc5}\label{classIR_a3d6fe8a0db806c767a4115390a0f7dc5}} 
+\index{IR@{IR}!redistributeVotes@{redistributeVotes}}
+\index{redistributeVotes@{redistributeVotes}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{redistributeVotes()}{redistributeVotes()}}
+{\footnotesize\ttfamily void I\+R\+::redistribute\+Votes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidate}{Candidate}} $\ast$}]{candidate }\end{DoxyParamCaption})}
+
+
+
+redistribute\+Votes\+: Redistributes votes in an \mbox{\hyperlink{classIR}{IR}} election 
+
+
+\begin{DoxyParams}{Parameters}
+{\em candidate} & \mbox{\hyperlink{classCandidate}{Candidate}} who has been eliminated \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIR_a97ae0941b904a3a6b2e39b663683d0e0}\label{classIR_a97ae0941b904a3a6b2e39b663683d0e0}} 
+\index{IR@{IR}!runElection@{runElection}}
+\index{runElection@{runElection}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{runElection()}{runElection()}}
+{\footnotesize\ttfamily int I\+R\+::run\+Election (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $\ast$ $>$ \&}]{cans\+From\+Ballots,  }\item[{string}]{audit\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+run\+Election\+: Runs the election 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cans\+From\+Ballots} & vector of candidates created by read\+Ballots \\
+\hline
+{\em a\+File\+Name} & name of the audit file \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classIR_a13773ce5d2e823a32f3e45162c7d87ab}\label{classIR_a13773ce5d2e823a32f3e45162c7d87ab}} 
+\index{IR@{IR}!setWinner@{setWinner}}
+\index{setWinner@{setWinner}!IR@{IR}}
+\doxysubsubsection{\texorpdfstring{setWinner()}{setWinner()}}
+{\footnotesize\ttfamily void I\+R\+::set\+Winner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCandidate}{Candidate}} $\ast$}]{candidate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+sets the winner 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & \mbox{\hyperlink{classCandidate}{Candidate}} who has won the election \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/src/include/\mbox{\hyperlink{ir_8h}{ir.\+h}}\end{DoxyCompactItemize}

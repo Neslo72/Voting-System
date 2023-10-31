@@ -1,0 +1,79 @@
+\hypertarget{class_start}{}\doxysection{Start Class Reference}
+\label{class_start}\index{Start@{Start}}
+
+
+\doxylink{class_start}{Start} Class\+: Begins the election system \& processes the ballot file.  
+
+
+
+
+{\ttfamily \#include $<$start.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_start_a26acc6dcc887a9c9d140532a179cfe34}\label{class_start_a26acc6dcc887a9c9d140532a179cfe34} 
+{\bfseries Start} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: Construct a new \doxylink{class_start}{Start} object. \end{DoxyCompactList}\item 
+\Hypertarget{class_start_ad28971ef6d65a39a8a748d4992260f8c}\label{class_start_ad28971ef6d65a39a8a748d4992260f8c} 
+{\bfseries $\sim$\+Start} ()
+\begin{DoxyCompactList}\small\item\em Destructor\+: Destroy the \doxylink{class_start}{Start} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_start_a3beff3944e02af1cdb559baab3903660}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main function to begin the voting system which handles the ballot file \& determines the election type. \end{DoxyCompactList}\item 
+\Hypertarget{class_start_a53d58434e2dacfd851d221ee817acf77}\label{class_start_a53d58434e2dacfd851d221ee817acf77} 
+void {\bfseries reset} ()
+\begin{DoxyCompactList}\small\item\em reset function to handle an interruption while the system is running \end{DoxyCompactList}\item 
+\Hypertarget{class_start_a32c4040ea292020cb4b4d08c13eb750f}\label{class_start_a32c4040ea292020cb4b4d08c13eb750f} 
+void {\bfseries enter\+Ballot\+File} ()
+\begin{DoxyCompactList}\small\item\em prompts the user for a valid ballot file \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_start_a207b31b9dfb528a25aea3e2222e1c8b2}{calculate}} (string ballot\+File\+Name)
+\begin{DoxyCompactList}\small\item\em calculates the type of election based on the first line of the ballot file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_start}{Start} Class\+: Begins the election system \& processes the ballot file. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_start_a207b31b9dfb528a25aea3e2222e1c8b2}\label{class_start_a207b31b9dfb528a25aea3e2222e1c8b2} 
+\index{Start@{Start}!calculate@{calculate}}
+\index{calculate@{calculate}!Start@{Start}}
+\doxysubsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily string Start\+::calculate (\begin{DoxyParamCaption}\item[{string}]{ballot\+File\+Name }\end{DoxyParamCaption})}
+
+
+
+calculates the type of election based on the first line of the ballot file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ballot\+File\+Name} & the name of the ballot file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\+: the type of election (\textquotesingle{}\doxylink{class_c_p_l}{CPL}\textquotesingle{} or \textquotesingle{}\doxylink{class_i_r}{IR}\textquotesingle{}) 
+\end{DoxyReturn}
+\Hypertarget{class_start_a3beff3944e02af1cdb559baab3903660}\label{class_start_a3beff3944e02af1cdb559baab3903660} 
+\index{Start@{Start}!main@{main}}
+\index{main@{main}!Start@{Start}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int Start\+::main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Main function to begin the voting system which handles the ballot file \& determines the election type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of command line arguments \\
+\hline
+{\em argv} & array of command line arguments \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\+: 0 on success and 1 on failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/justinlau/\+Downloads/\+UMN/\+Spring2023/5801/\+Project1/repo-\/\+Team7/\+Project1/include/\mbox{\hyperlink{start_8h}{start.\+h}}\end{DoxyCompactItemize}

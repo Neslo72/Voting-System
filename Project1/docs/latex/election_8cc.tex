@@ -1,0 +1,67 @@
+\hypertarget{election_8cc}{}\doxysection{/\+Users/justinlau/\+Downloads/\+UMN/\+Spring2023/5801/\+Project1/repo-\/\+Team7/\+Project1/source/election.cc File Reference}
+\label{election_8cc}\index{/Users/justinlau/Downloads/UMN/Spring2023/5801/Project1/repo-\/Team7/Project1/source/election.cc@{/Users/justinlau/Downloads/UMN/Spring2023/5801/Project1/repo-\/Team7/Project1/source/election.cc}}
+
+
+Handles parsing the ballot file to determine the number of ballots, creates the audit file, writes to the audit file, and prints the results of the election.  
+
+
+{\ttfamily \#include $<$election.\+h$>$}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{election_8cc_a46c20eb2a26abeb1e934cd66e1dd6484}{path}} = \char`\"{}../Project1/Audit\+Files\char`\"{}
+\item 
+time\+\_\+t \mbox{\hyperlink{election_8cc_a3c3ca8cc859a31aec6578f0dcf1b32a5}{now}} = time(0)
+\item 
+\Hypertarget{election_8cc_ad98f0607495781db6e5e1e32d783428b}\label{election_8cc_ad98f0607495781db6e5e1e32d783428b} 
+tm $\ast$ {\bfseries ltm} = localtime(\&\mbox{\hyperlink{election_8cc_a3c3ca8cc859a31aec6578f0dcf1b32a5}{now}})
+\item 
+ifstream \mbox{\hyperlink{election_8cc_a31d89f48b63502512b932cf778b90e24}{ballot\+FileE}}
+\item 
+ofstream \mbox{\hyperlink{election_8cc_aad8e8ba8d00c237e2fe1d14e3d183515}{audit\+File}}
+\item 
+string \mbox{\hyperlink{election_8cc_aaf9695ef683e13f35afbf7f983540d46}{election\+TypeE}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles parsing the ballot file to determine the number of ballots, creates the audit file, writes to the audit file, and prints the results of the election. 
+
+\begin{DoxyAuthor}{Author}
+Justin Lau 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{election_8cc_aad8e8ba8d00c237e2fe1d14e3d183515}\label{election_8cc_aad8e8ba8d00c237e2fe1d14e3d183515} 
+\index{election.cc@{election.cc}!auditFile@{auditFile}}
+\index{auditFile@{auditFile}!election.cc@{election.cc}}
+\doxysubsubsection{\texorpdfstring{auditFile}{auditFile}}
+{\footnotesize\ttfamily ofstream audit\+File}
+
+Audit file \Hypertarget{election_8cc_a31d89f48b63502512b932cf778b90e24}\label{election_8cc_a31d89f48b63502512b932cf778b90e24} 
+\index{election.cc@{election.cc}!ballotFileE@{ballotFileE}}
+\index{ballotFileE@{ballotFileE}!election.cc@{election.cc}}
+\doxysubsubsection{\texorpdfstring{ballotFileE}{ballotFileE}}
+{\footnotesize\ttfamily ifstream ballot\+FileE}
+
+Provided ballot file \Hypertarget{election_8cc_aaf9695ef683e13f35afbf7f983540d46}\label{election_8cc_aaf9695ef683e13f35afbf7f983540d46} 
+\index{election.cc@{election.cc}!electionTypeE@{electionTypeE}}
+\index{electionTypeE@{electionTypeE}!election.cc@{election.cc}}
+\doxysubsubsection{\texorpdfstring{electionTypeE}{electionTypeE}}
+{\footnotesize\ttfamily string election\+TypeE}
+
+Type of election \Hypertarget{election_8cc_a3c3ca8cc859a31aec6578f0dcf1b32a5}\label{election_8cc_a3c3ca8cc859a31aec6578f0dcf1b32a5} 
+\index{election.cc@{election.cc}!now@{now}}
+\index{now@{now}!election.cc@{election.cc}}
+\doxysubsubsection{\texorpdfstring{now}{now}}
+{\footnotesize\ttfamily time\+\_\+t now = time(0)}
+
+Find today\textquotesingle{}s date to name the audit file ~\newline
+Information gathered from\+: \href{https://stackoverflow.com/questions/64782/how-do-you-append-an-int-to-a-string-in-c}{\texttt{ https\+://stackoverflow.\+com/questions/64782/how-\/do-\/you-\/append-\/an-\/int-\/to-\/a-\/string-\/in-\/c}} \Hypertarget{election_8cc_a46c20eb2a26abeb1e934cd66e1dd6484}\label{election_8cc_a46c20eb2a26abeb1e934cd66e1dd6484} 
+\index{election.cc@{election.cc}!path@{path}}
+\index{path@{path}!election.cc@{election.cc}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily string path = \char`\"{}../Project1/Audit\+Files\char`\"{}}
+
+path to store audit files 

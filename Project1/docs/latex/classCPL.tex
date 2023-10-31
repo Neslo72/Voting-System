@@ -1,0 +1,70 @@
+\hypertarget{classCPL}{}\doxysection{C\+PL Class Reference}
+\label{classCPL}\index{CPL@{CPL}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPL_a9938ffc19a8f041161df5e6392eb1d4c}\label{classCPL_a9938ffc19a8f041161df5e6392eb1d4c}} 
+\mbox{\hyperlink{classCPL_a9938ffc19a8f041161df5e6392eb1d4c}{C\+PL}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_abbbcdafee9b1a5951730494fd3595439}\label{classCPL_abbbcdafee9b1a5951730494fd3595439}} 
+\mbox{\hyperlink{classCPL_abbbcdafee9b1a5951730494fd3595439}{$\sim$\+C\+PL}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCPL_a64df7bbe9ba8009474d6ef4059f53681}\label{classCPL_a64df7bbe9ba8009474d6ef4059f53681}} 
+int {\bfseries run\+Election} (std\+::string ballot\+File\+Name)
+\item 
+\mbox{\Hypertarget{classCPL_a3dbf758a677c27d524355cf89ba1a8bf}\label{classCPL_a3dbf758a677c27d524355cf89ba1a8bf}} 
+\mbox{\hyperlink{classParty}{Party}} $\ast$ {\bfseries break\+Tie} (std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $\ast$ $>$ tie\+Vector)
+\item 
+\mbox{\Hypertarget{classCPL_a2197fb515b21c840035f8bcfea16cd00}\label{classCPL_a2197fb515b21c840035f8bcfea16cd00}} 
+int {\bfseries read\+Ballots} (std\+::string ballot\+File\+Name)
+\item 
+\mbox{\Hypertarget{classCPL_af83d9fd06b52451219c1b2d6fa985468}\label{classCPL_af83d9fd06b52451219c1b2d6fa985468}} 
+void {\bfseries assign\+Seats} ()
+\item 
+\mbox{\Hypertarget{classCPL_ab05c22a6b73cc5a856609ee5a71113db}\label{classCPL_ab05c22a6b73cc5a856609ee5a71113db}} 
+int \mbox{\hyperlink{classCPL_ab05c22a6b73cc5a856609ee5a71113db}{get\+Highest\+Remainder\+Index}} ()
+\begin{DoxyCompactList}\small\item\em get\+Highest\+Remainder\+Index\+: Gets the index of the party with the highest remainder \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ \mbox{\hyperlink{classCPL_a9d37528da9f4c088fc565e91b346ef9e}{get\+Winners}} ()
+\begin{DoxyCompactList}\small\item\em gets the winners \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCPL_acccb7c7d1693a23fffd7124d35b5525f}\label{classCPL_acccb7c7d1693a23fffd7124d35b5525f}} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ {\bfseries ballots}
+\item 
+\mbox{\Hypertarget{classCPL_af9b520848b37eab04e633cda5fe073be}\label{classCPL_af9b520848b37eab04e633cda5fe073be}} 
+std\+::vector$<$ \mbox{\hyperlink{classParty}{Party}} $>$ {\bfseries parties}
+\item 
+\mbox{\Hypertarget{classCPL_a06e6bcb9d75baba389c3e8cf75a3f87b}\label{classCPL_a06e6bcb9d75baba389c3e8cf75a3f87b}} 
+int {\bfseries num\+\_\+ballots}
+\item 
+\mbox{\Hypertarget{classCPL_ab5d771dc4463477544a887024009b7d6}\label{classCPL_ab5d771dc4463477544a887024009b7d6}} 
+int {\bfseries num\+\_\+seats}
+\item 
+\mbox{\Hypertarget{classCPL_a4b8e78f3d4d303d2f9895ee2b5497cce}\label{classCPL_a4b8e78f3d4d303d2f9895ee2b5497cce}} 
+int {\bfseries num\+\_\+candidates}
+\item 
+\mbox{\Hypertarget{classCPL_a07c4782666634e318b52f7addd7c31b1}\label{classCPL_a07c4782666634e318b52f7addd7c31b1}} 
+std\+::vector$<$ \mbox{\hyperlink{classCandidate}{Candidate}} $>$ {\bfseries winner}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCPL_a9d37528da9f4c088fc565e91b346ef9e}\label{classCPL_a9d37528da9f4c088fc565e91b346ef9e}} 
+\index{CPL@{CPL}!getWinners@{getWinners}}
+\index{getWinners@{getWinners}!CPL@{CPL}}
+\doxysubsubsection{\texorpdfstring{getWinners()}{getWinners()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCandidate}{Candidate}}$>$ C\+P\+L\+::get\+Winners (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+gets the winners 
+
+\begin{DoxyReturn}{Returns}
+winners 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/include/closedpartylist.\+h\end{DoxyCompactItemize}

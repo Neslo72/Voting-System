@@ -1,0 +1,66 @@
+\hypertarget{classBallot}{}\doxysection{Ballot Class Reference}
+\label{classBallot}\index{Ballot@{Ballot}}
+
+
+\mbox{\hyperlink{classBallot}{Ballot}} class\+: Stores a vector of candidate choices to be used in an \mbox{\hyperlink{classIR}{IR}} election.  
+
+
+
+
+{\ttfamily \#include $<$ballot.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBallot_af9078126260b3f58ea91f6b82797396b}\label{classBallot_af9078126260b3f58ea91f6b82797396b}} 
+\mbox{\hyperlink{classBallot_af9078126260b3f58ea91f6b82797396b}{Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Constructor\+: Makes a new, empty ballot object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBallot_aefa9d5bd513661ec80585475f42eeb83}\label{classBallot_aefa9d5bd513661ec80585475f42eeb83}} 
+\mbox{\hyperlink{classBallot_aefa9d5bd513661ec80585475f42eeb83}{$\sim$\+Ballot}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBallot_a60c515eb645626c8556dcda73829b503}{add\+Choice}} (int choice)
+\begin{DoxyCompactList}\small\item\em adds a candidate choice to the ballots queue \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBallot_a0726af941f1b44c56ddc0cd3c32a0914}{get\+Choice}} ()
+\begin{DoxyCompactList}\small\item\em Gets the first choice of this ballot, removes said choice from choices queue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBallot_a6c5bd4f2e1b98c2d3a287b4863ce1cf4}\label{classBallot_a6c5bd4f2e1b98c2d3a287b4863ce1cf4}} 
+std\+::queue$<$ int $>$ {\bfseries get\+Choices} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classBallot}{Ballot}} class\+: Stores a vector of candidate choices to be used in an \mbox{\hyperlink{classIR}{IR}} election. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBallot_a60c515eb645626c8556dcda73829b503}\label{classBallot_a60c515eb645626c8556dcda73829b503}} 
+\index{Ballot@{Ballot}!addChoice@{addChoice}}
+\index{addChoice@{addChoice}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{addChoice()}{addChoice()}}
+{\footnotesize\ttfamily void Ballot\+::add\+Choice (\begin{DoxyParamCaption}\item[{int}]{choice }\end{DoxyParamCaption})}
+
+
+
+adds a candidate choice to the ballots queue 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+Add} & candidate choice to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBallot_a0726af941f1b44c56ddc0cd3c32a0914}\label{classBallot_a0726af941f1b44c56ddc0cd3c32a0914}} 
+\index{Ballot@{Ballot}!getChoice@{getChoice}}
+\index{getChoice@{getChoice}!Ballot@{Ballot}}
+\doxysubsubsection{\texorpdfstring{getChoice()}{getChoice()}}
+{\footnotesize\ttfamily int Ballot\+::get\+Choice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the first choice of this ballot, removes said choice from choices queue. 
+
+\begin{DoxyReturn}{Returns}
+Returns the choice index removed from choices, -\/1 if nothing left 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/mnt/c/\+Users/marcu/\+One\+Drive/\+Code/\+School/\+C\+S\+C\+I5801/repo-\/\+Team7/\+Project1/src/include/\mbox{\hyperlink{ballot_8h}{ballot.\+h}}\end{DoxyCompactItemize}

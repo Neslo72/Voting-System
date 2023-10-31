@@ -1,0 +1,47 @@
+\hypertarget{candidate_8h_source}{}\doxysection{candidate.\+h}
+\label{candidate_8h_source}\index{/Users/justinlau/Downloads/UMN/Spring2023/5801/Project1/repo-\/Team7/Project1/include/candidate.h@{/Users/justinlau/Downloads/UMN/Spring2023/5801/Project1/repo-\/Team7/Project1/include/candidate.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CANDIDATE\_H\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CANDIDATE\_H\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}ballot.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{//Candidate\ Class}}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_candidate}{Candidate}}\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{class_candidate}{Candidate}}(std::string\ \_name,\ std::string\ \_party);}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_candidate}{\string~Candidate}}()\ \{\};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{comment}{//Get\ the\ candidate's\ name}}
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ getName()\ \{\ \textcolor{keywordflow}{return}\ name;\ \};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{comment}{//Get\ the\ candidate's\ party\ name}}
+\DoxyCodeLine{00020\ \ \ \ \ std::string\ getParty()\ \{\ \textcolor{keywordflow}{return}\ party;\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{comment}{//Get\ numberOfVotes}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ getNumVotes()\ \{\ \textcolor{keywordflow}{return}\ ballots.size();\ \};}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{comment}{//Add\ a\ ballot\ to\ the\ ballots\ queue}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{void}\ addBallot(\mbox{\hyperlink{class_ballot}{Ballot}}\ \_ballot);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{comment}{//Removes\ a\ ballot\ from\ the\ ballots\ vector,}}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{comment}{//the\ removed\ vector\ is\ stored\ at\ *removedBallot}}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//Returns\ 0\ on\ succes,\ 1\ on\ error}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ removeBallot(\mbox{\hyperlink{class_ballot}{Ballot}}*\ removedBallot);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::string\ party;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ std::queue<Ballot>\ ballots;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//int\ numberOfVotes;\ \ //unneccesary?}}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,243 @@
+[==========] Running 3 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 3 tests from BallotTest
+[ RUN      ] BallotTest.addChoice
+[       OK ] BallotTest.addChoice (0 ms)
+[ RUN      ] BallotTest.EmptyChoices
+[       OK ] BallotTest.EmptyChoices (0 ms)
+[ RUN      ] BallotTest.addChoiceOrder
+[       OK ] BallotTest.addChoiceOrder (0 ms)
+[----------] 3 tests from BallotTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 3 tests.
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from CPLSysTest
+[ RUN      ] CPLSysTest.NormalCPLSystemTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Foster
+Winner: Green
+Winner: McClure
+
+[       OK ] CPLSysTest.NormalCPLSystemTest (23 ms)
+[ RUN      ] CPLSysTest.TieNoRemainderCPLSystemTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Foster
+Winner: Green
+Winner: Jacks
+
+[       OK ] CPLSysTest.TieNoRemainderCPLSystemTest (9 ms)
+[ RUN      ] CPLSysTest.WipeoutCPLSystemTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Foster
+Winner:  Volz
+Winner:  Pike
+
+[       OK ] CPLSysTest.WipeoutCPLSystemTest (20 ms)
+[ RUN      ] CPLSysTest.PureTieCPLSystemTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+
+Running the election.
+CPL ELECTION RESULTS: 
+Winner: Foster
+Winner: Jacks
+
+[       OK ] CPLSysTest.PureTieCPLSystemTest (22 ms)
+[----------] 4 tests from CPLSysTest (74 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (75 ms total)
+[  PASSED  ] 4 tests.
+[==========] Running 9 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 9 tests from CPLTest
+[ RUN      ] CPLTest.CPLRunElectionTest
+[       OK ] CPLTest.CPLRunElectionTest (10 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestType
+
+[       OK ] CPLTest.CPLReadBallotsTestType (1 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestNumParty
+
+[       OK ] CPLTest.CPLReadBallotsTestNumParty (0 ms)
+[ RUN      ] CPLTest.CPLReadBallotsPartyNames
+
+[       OK ] CPLTest.CPLReadBallotsPartyNames (0 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestCandidates
+
+[       OK ] CPLTest.CPLReadBallotsTestCandidates (0 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestNumSeats
+
+[       OK ] CPLTest.CPLReadBallotsTestNumSeats (1 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestNumBallots
+
+[       OK ] CPLTest.CPLReadBallotsTestNumBallots (0 ms)
+[ RUN      ] CPLTest.CPLReadBallotsTestBallotTotals
+
+[       OK ] CPLTest.CPLReadBallotsTestBallotTotals (0 ms)
+[ RUN      ] CPLTest.CPLBreakTieTest
+gtest_code/CPLTest.cc:153: Failure
+Expected equality of these values:
+  1
+  win
+    Which is: 0
+[  FAILED  ] CPLTest.CPLBreakTieTest (3112 ms)
+[----------] 9 tests from CPLTest (3124 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test suite ran. (3124 ms total)
+[  PASSED  ] 8 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] CPLTest.CPLBreakTieTest
+
+ 1 FAILED TEST
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from IRSysTest
+[ RUN      ] IRSysTest.IRNormalSystemTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Kleinberg  has been eliminated.
+The remaining candidates are: 
+ Rosen  (3 votes)
+  Chou  (1 votes)
+  Royce  (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Chou  has been eliminated.
+The remaining candidates are: 
+ Rosen  (4 votes)
+  Royce  (3 votes)
+Candidate Rosen  has won the election!
+
+[       OK ] IRSysTest.IRNormalSystemTest (28 ms)
+[ RUN      ] IRSysTest.IRWipeoutSystemTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+Running the election.
+Candidate Rosen  has won the election!
+
+[       OK ] IRSysTest.IRWipeoutSystemTest (6 ms)
+[ RUN      ] IRSysTest.IRTieTestSystemTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Royce  has been eliminated.
+The remaining candidates are: 
+ Rosen  (3 votes)
+  Kleinberg  (3 votes)
+  Chou  (2 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Chou  has been eliminated.
+The remaining candidates are: 
+ Rosen  (4 votes)
+  Kleinberg  (3 votes)
+Candidate Rosen  has won the election!
+
+[       OK ] IRSysTest.IRTieTestSystemTest (54 ms)
+[ RUN      ] IRSysTest.IRMultipleElimTest
+CWD after ../../mnt/c/Users/marcu/OneDrive/Code/School/CSCI5801/repo-Team7/Project1
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Lucas has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Jon (1 votes)
+  Jo (1 votes)
+  Marcus (1 votes)
+  Liam (1 votes)
+  Justin (2 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Liam has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Jon (1 votes)
+  Jo (1 votes)
+  Marcus (1 votes)
+  Justin (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Jo has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Jon (1 votes)
+  Marcus (2 votes)
+  Justin (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate  Jon has been eliminated.
+The remaining candidates are: 
+ Jack (1 votes)
+  Marcus (3 votes)
+  Justin (3 votes)
+RUNOFF ELIMINATION RESULTS: 
+Candidate Jack has been eliminated.
+The remaining candidates are: 
+  Marcus (4 votes)
+  Justin (3 votes)
+Candidate  Marcus has won the election!
+
+[       OK ] IRSysTest.IRMultipleElimTest (124 ms)
+[----------] 4 tests from IRSysTest (212 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (212 ms total)
+[  PASSED  ] 4 tests.
+[==========] Running 5 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 5 tests from IRTest
+[ RUN      ] IRTest.IRRunElectionNoCan
+Running the election.
+
+[       OK ] IRTest.IRRunElectionNoCan (8 ms)
+[ RUN      ] IRTest.IRRunElectionOneCanOneBalEmpty
+Running the election.
+RUNOFF ELIMINATION RESULTS: 
+Candidate Arnold has been eliminated.
+The remaining candidates are: 
+Error: possible elimination candidate has no items.
+
+[       OK ] IRTest.IRRunElectionOneCanOneBalEmpty (20 ms)
+[ RUN      ] IRTest.IRRunElectionOneCanOneBal
+Running the election.
+Candidate Arnold has won the election!
+
+[       OK ] IRTest.IRRunElectionOneCanOneBal (11 ms)
+[ RUN      ] IRTest.IRRunElectionTwoCanTwoBal
+Running the election.
+Candidate Arnold has won the election!
+
+[       OK ] IRTest.IRRunElectionTwoCanTwoBal (16 ms)
+[ RUN      ] IRTest.IRRunElectionThreeCanThreeBal
+Running the election.
+Candidate Gerald has won the election!
+
+[       OK ] IRTest.IRRunElectionThreeCanThreeBal (4 ms)
+[----------] 5 tests from IRTest (59 ms total)
+
+[----------] Global test environment tear-down
+[==========] 5 tests from 1 test suite ran. (59 ms total)
+[  PASSED  ] 5 tests.
+[==========] Running 4 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 4 tests from PartyTest
+[ RUN      ] PartyTest.BallotTotalManipulation
+[       OK ] PartyTest.BallotTotalManipulation (0 ms)
+[ RUN      ] PartyTest.SeatManipulation
+[       OK ] PartyTest.SeatManipulation (0 ms)
+[ RUN      ] PartyTest.MemberManipulation
+[       OK ] PartyTest.MemberManipulation (0 ms)
+[ RUN      ] PartyTest.getWinners
+[       OK ] PartyTest.getWinners (0 ms)
+[----------] 4 tests from PartyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test suite ran. (0 ms total)
+[  PASSED  ] 4 tests.
