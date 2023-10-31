@@ -1,3 +1,6 @@
+# Personal Post-Class Statement
+This respository was created for the University of Minnesota class _Software Engineering I_.  I, Lucas Olsen, worked with 3 other students to create a voting system following common practices in software engineering over the spring 2023 semester.  Apart from this statement, the entirety of this repository is as was submitted.  The grade I recieved in the class was an A, which was largely based on scores for the `SDD`, `SRS`, `Project1`, and `Project2` assigments present in this repository.
+
 # repo-Team7
 *Created by Justin Lau, Marcus Rana, Liam Mcguigan, and Lucas Olsen*
 
